@@ -10,7 +10,7 @@ void setup() {
   movs[0] = new Movie(this, "fingers.mov");
   movs[1] = new Movie(this, "transit.mov");
 
-  for (int i = 0; i < 2; i++) {
+  for (int i = 0; i < movs.length; i++) {
     //movs[i] = new Movie(this, (i+1)+".mov");
     movs[i].loop();
   }
