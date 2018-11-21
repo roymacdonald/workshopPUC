@@ -10,10 +10,13 @@ Kinect kinect;
 // declaramos una imagen, depthImg, que nos servira para almacenar los pixeles que estan dentro del rango minDepth y maxDepth
 PImage depthImg;
 
+//almacenaremos los valores minimo y maximo de profundidad donde queremos interactuar
 int minDepth =  690;
 int maxDepth = 910;
+// almacenamos la distancia minima que lee la kinect dentro de el rango definido por minDepth y maxDepth. 
 int distanciaMinima = 2047;
 
+// Almacenamos el indice del pixel que tiene la distancia minima.
 int indiceMinimo;
 
 void setup() {
